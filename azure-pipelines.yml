@@ -1,0 +1,9 @@
+- task: SqlAzureDacpacDeployment@1
+  displayName: Execute Azure SQL : DacpacTask
+  inputs:none
+    azureSubscription: dea20f13-b8a2-4c09-9cfe-b902ec798126
+    ServerName: cpazuredb.database.windows.net
+    DatabaseName: RendercarePop
+    SqlUsername: itadmin
+    SqlPassword: e{C\b++<Os3!L:nOCB{El4f]Q+B|KS4TeuM?P.v|7VB+|i\Z]j)dZaZqnG(2
+    DacpacFile: cputil.careabout.com\e:\load\RendrcarePop.bacpac
