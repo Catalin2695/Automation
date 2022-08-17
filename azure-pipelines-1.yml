@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool: 
+
+steps:
+
+  - task: SqlAzureDacpacDeployment@1
+  displayName: Execute Azure SQL : DacpacTask
+  inputs:
+    azureSubscription: 'Azure Classic'
+    ServerName: 'cpazuredb.database.windows.net'
+    DatabaseName: 'test'
+    SqlUsername: 'itadmin'
+    SqlPassword: 'e{C\b++<Os3!L:nOCB{El4f]Q+B|KS4TeuM?P.v|7VB+|i\Z]j)dZaZqnG(2'
+
+
